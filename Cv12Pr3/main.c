@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 
 	if (data_read(fr, &data) < 0) {
 		fprintf(stderr, "Chyba vo funkcii data_read!");
-		fclose(fr);
+		fr && fclose(fr);
 		return -1;
 	}
 	fclose(fr);
