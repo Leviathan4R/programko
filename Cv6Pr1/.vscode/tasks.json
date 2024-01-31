@@ -6,10 +6,11 @@
             "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
+                "-g",
                 "main.c",
-                "-lm",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lm",
             ],
             "options": {
                 "cwd": "${fileDirname}"
